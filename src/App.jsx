@@ -30,7 +30,7 @@ function Localizador({ focar }) {
       map.locate();
     }
   }, [focar, map]);
-
+    
   return posicao === null ? null : (
     <Marker position={posicao} icon={L.divIcon({
       className: 'bg-transparent',
@@ -80,6 +80,22 @@ function App() {
   
   // NOVO: Estado para controlar qual prédio aparece na gaveta
   const [predioAberto, setPredioAberto] = useState(null);
+
+  // Lógica para interceptar o botão "Voltar" do celular e fechar a gaveta
+  useEffect(() => {
+    if (predioAberto) {
+      window.history.pushState({ drawerOpen: true }, "");
+    }
+
+    const handlePopState = () => {
+      if (predioAberto) {
+        setPredioAberto(null);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [predioAberto]);
 
   const limitesCampus = [
     [-32.0950, -52.1850], 
@@ -151,7 +167,7 @@ function App() {
       </button>
 
       {/* ------------------------------------------------------------------------
-          NOVO: Gaveta Inferior (Bottom Sheet)
+          Gaveta Inferior (Bottom Sheet)
           ------------------------------------------------------------------------ */}
       <div 
         className={`absolute bottom-0 left-0 right-0 md:left-1/2 md:-translate-x-1/2 md:max-w-[480px] z-[2000] bg-white/90 backdrop-blur-2xl border-t border-white/60 rounded-t-3xl shadow-[0_-10px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 ease-out flex flex-col ${predioAberto ? 'translate-y-0' : 'translate-y-full'}`}
