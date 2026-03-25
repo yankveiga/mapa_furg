@@ -17,11 +17,11 @@ export const predios = [
     lng: -52.16590916190858, 
     descricao: "Almoço: 11h00 - 14h00 | Janta: 18h00 - 21h.",
     cardapio: {
-      segunda: "Aguardando atualização...",
-      terca: "Aguardando atualização...",
-      quarta: "Aguardando atualização...",
-      quinta: "Aguardando atualização...",
-      sexta: "Aguardando atualização...",
+      segunda: "Arroz Branco, Arroz Integral, Feijão Preto, Frango Cubos Bovinos ao Molho, Grão de Bico com Molho Vermelho, Ovo Pochê, Parafuso Alho e Óleo, Alface, Cenoura Ralada, Mix de Grãos, Maçã",
+      terca: "Arroz Branco, Arroz Integral com Linhaça, Feijão Preto, Strogonoff de Frango, Bife Acebolado, Cogumelos Refogados, Ovo Cozido, Batata Palha, Alface, Repolho, Macarronese, Melão",
+      quarta: "Arroz Branco, Arroz Integral, Feijão Preto, Frango à Xadrez, Carne Moída, PTS ao Molho, Ovo Pochê, Legumes Sauteé, Alface, Beterraba Cozida, Tomate com Cebola, Melancia",
+      quinta: "Arroz Branco, Arroz Integral com Linhaça, Feijão Carioca, Frango ao Molho, Carré Acebolado, Pastel de Brócolis com Cenoura, Ovo Cozido, Farofa Colorida, Alface, Pepino, Cenoura Cozida, Laranja",
+      sexta: "Arroz Branco, Arroz Integral, Feijão Preto, Carne Moída ao Molho, Peixe Empanado, PST ao Molho, Ovo Pochê, Purê de Batata, Alface, Chuchu, Beterraba Ralada, Banana",
     }
   },
   // Restaurante Universitário - CC - Requer atualização presencial semanal
@@ -32,11 +32,13 @@ export const predios = [
     lng: -52.166576, 
     descricao: "Almoço: 11h00 - 14h00 | Janta: 18h00 - 21h.",
     cardapio: {
-      segunda: "Aguardando atualização...",
-      terca: "Aguardando atualização...",
-      quarta: "Aguardando atualização...",
-      quinta: "Aguardando atualização...",
-      sexta: "Aguardando atualização...",
+      segunda: "Arroz Branco, Arroz Integral, Feijão Preto, Strogonoff de Carne Bovina, Filé de Frango ao Molho Mostarda, PTS com Moranga, Batata Palha, Couve Chinesa, Cenoura Cozida, Pepino, Laranja",
+      terca: "Arroz Branco, Arroz Integral com Linhaça, Feijão Preto, Pastel de Carne, Cubos de Frango à Xadrez, Grão de Bico Crocante, Cenoura Sautê, Alface, Maionese de Beterraba, Rabanete em Conserva, Maçã",
+      quarta: "Arroz Branco, Arroz Integral, Feijão Preto, Cubos de Suínos ao Molho BBQ, Fricassê de Frango, Legumes Sauteados, Massa Espaguete ao Alho e Óleo, Alface, Chuchu com Milho, Salada Caicó, Melão",
+      quinta: "Arroz Branco, Arroz Integral, Lentilha, Bife Bovino Acebolado, Peixe à Milanesa, Tomate Recheado com PTS, Purê de Batatas Especial, Mix de Folhas, Cenoura Cozida, Rabanete Ralado, Banana",
+      sexta: "Arroz Branco, Arroz Integral, Feijão Carioca, Lasanha à Bolonhesa, Bife de Frango Crocante, Strogonoff de Cogumelos, Jardineira de Legumes, Alface, Soja em Grãos Refogado com Tempero Verde, Salada Naútica, Laranja",
+      sábado: "Arroz Branco, Arroz Integral, Feijão Preto, Bisteca Suína ao Molho Madeira, Cubos de Frango à Xadrez, Bolinho de Grão de Bico, Bolinho de Cenoura, Alface, Berinjela Cozida com Tempero Verde, Tomate com Cebola, Maçã",
+      domingo: "Arroz Branco, Arroz Integral, Feijão Carioca, Carne de Panela, Coxa com Sobrecoxa Assada no Forno, Hambúrguer de Lentilha, Farofa com Legumes, Chicória, Beterraba Cozida, Pepino com Cebola, Creme de Baunilha com Calda de Maçã",
     }
   },
 
